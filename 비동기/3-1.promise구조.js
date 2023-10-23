@@ -21,6 +21,16 @@
 
 // then, catch로 받을 때 인수 이름은 자유!
 
+
+new Promise((resolve, reject) => {
+  // 여기에서 비동기 작업을 수행합니다.
+  if (/* 작업이 성공적으로 수행되었을 경우 */) {
+    resolve(결과값);
+  } else {
+    reject(에러);
+  }
+});
+
 // promise의 기본 구조 만들기
 const promise = new Promise((resolve, reject) => {
   resolve(console.log('프로미스 이행')); // resolve 호출

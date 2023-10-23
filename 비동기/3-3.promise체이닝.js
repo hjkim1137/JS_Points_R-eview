@@ -19,8 +19,7 @@ const testPromise = new Promise((resolve, reject) => {
     console.log(data3); //21
   });
 
-// 예제
-// 체이닝 연습
+// 예제: 체이닝 연습
 const test1 = new Promise((resolve, reject) => {
   setTimeout(() => {
     resolve({ test_1: 'test1 입니다.' });

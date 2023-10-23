@@ -7,8 +7,8 @@ async function hello() {
 }
 hello();
 
+let url2 = 'http://www.thecocktaildb.com/api/json/v1/1/random.php';
 async function test() {
-  let url2 = 'http://www.thecocktaildb.com/api/json/v1/1/random.php';
   try {
     const res = await fetch(url2);
     if (!res.ok) {
